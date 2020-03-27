@@ -8,10 +8,16 @@
 * Делаем merge `pull request` из СВОЕЙ ветки в `dev`
 
 
+### Сделать свою ветку
+    git branch [name branch]
 ### Сделать свою ветку и перейти в нее
     git checkout -b [name branch]
+### Перемещаться по веткам
+    git checkout [name branch]    
 ### Чтоб сделать push своей ветки на GitHub
     git push -u origin [name branch]
+### Удалить ветку 
+    git branch -d [name branch]
 
 ---
 ---
