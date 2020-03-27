@@ -1,0 +1,12 @@
+.nav-icon {
+  @include сenter-x;
+  bottom: 16px;
+
+  &__arrow-down {
+    width: 28px;
+    height: 28px;
+    fill: $color_accent;
+    border-radius: 50%;
+    border: 2px solid $color_accent;
+  }
+}
