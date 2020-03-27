@@ -1,0 +1,21 @@
+.banner {
+  width: 100%;
+  min-height: 765px;
+  background-image: linear-gradient($color_bg-overlay, $color_bg-overlay), url(../images/bg/bg-top.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  @media
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient($color_bg-overlay, $color_bg-overlay), url(../images/bg/bg-top@2x.jpg);
+  }
+
+  @media
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: linear-gradient($color_bg-overlay, $color_bg-overlay), url(../images/bg/bg-top@3x.jpg);
+  }
+}
