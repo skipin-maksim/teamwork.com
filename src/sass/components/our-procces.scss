@@ -1,0 +1,43 @@
+.our-process {
+  position: relative;
+  min-height: 840px;
+  padding-top: 42px;
+  padding-bottom: 21px;
+  text-align: center;
+
+  &__title {
+    @extend %larg-title;
+    @include line(165px, 1px, $color_grey, 10px);
+    font-family: $font-second;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: $color_grey-title;
+  }
+
+  &__sub-title {
+    @extend %normal-text;
+    margin: 12px auto 60px;
+    max-width: 525px;
+    font-weight: 300;
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .link-down {
+    @include bg-img('../images/icon/icon_arrow-down.svg', 18px);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid $color_accent;
+    @include transition;
+    
+    &:hover {
+      border: 2px solid $color_white;
+    }
+  }
+}

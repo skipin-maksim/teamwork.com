@@ -85,18 +85,18 @@
 ```
 и добавил свою длительность анимации
 ```css
-.dur-0.5s       
-.dur-1.5s
-.dur-2.5s 
-.dur-3.5s 
+.dur-0-5s       
+.dur-1-5s
+.dur-2-5s 
+.dur-3-5s 
 .dur-4s 
-.dur-4.5s 
+.dur-4-5s 
 .dur-5s 
 ```
 и задержку
 ```css
-.delay-1.5s
-.delay-2.5s
-.delay-3.5s
-.delay-4.5s
+.delay-1-5s
+.delay-2-5s
+.delay-3-5s
+.delay-4-5s
 ```

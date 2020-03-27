@@ -30,13 +30,14 @@
 
 // Создает линию под блоком
 // пример: @include sep-h(80%,2px,$blue);
-@mixin line($w, $h, $color) {
+@mixin line($w, $h, $color, $mar:5px) {
   &:after {
     content: '';
     display: block;
     height: $h;
     width: $w;
     margin: 0 auto;
+    margin-top: $mar;
     background-color: $color;
   }
 }
@@ -174,7 +175,7 @@
 }
 
 // шестиугольник
-@mixin hexagon($width: 100px, $height: 90px, $background: $color_accent) {
+@mixin hexagon($width: 100px, $height: 90px, $background: '$color_accent') {
   width: $width;
   height: $height;
   background: $background;
