@@ -29,6 +29,18 @@
           295px,
           $background: url(../images/process-photo.jpg)
         );
+
+        // @media (-webkit-min-device-pixel-ratio: 2),
+        //   (-o-min-device-pixel-ratio: 2/1),
+        //   (min-resolution: 192dpi) {
+        //     background: url(../images/process-photo@2x.jpg);
+        // }
+
+        // @media (-webkit-min-device-pixel-ratio: 3),
+        //   (-o-min-device-pixel-ratio: 3/1),
+        //   (min-resolution: 288dpi) {
+        //     background: url(../images/process-photo@3x.jpg);
+        // }
       }
     }
 
