@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../fonts/gotham/GothamPro-Bold.eot');
+  src: local('Gotham Pro Bold'), local('GothamPro-Bold'),
+    url('../fonts/gotham/GothamPro-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/gotham/GothamPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('../fonts/myriad/MyriadPro-Regular.woff');
+  src: local('Myriad Pro Regular'), local('MyriadPro-Regular'),
+    url('../fonts/myriad/MyriadPro-Regular.woff') format('woff'),
+    url('../fonts/myriad/MyriadPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PF Encore Sans Pro';
+  src: url('../fonts/pfe-ncore-sans/PFEncoreSansPro-Thin.eot');
+  src: local('PFEncoreSansPro-Thin'),
+    url('../fonts/pfe-ncore-sans/PFEncoreSansPro-Thin.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/pfe-ncore-sans/PFEncoreSansPro-Thin.woff2') format('woff2'),
+    url('../fonts/pfe-ncore-sans/PFEncoreSansPro-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PF Encore Sans Pro';
+  src: url('../fonts/pfe-ncore-sans/PFEncoreSansPro-Medium.eot');
+  src: local('../fonts/pfe-ncore-sans/PFEncoreSansPro-Medium'),
+    url('../fonts/pfe-ncore-sans/PFEncoreSansPro-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/pfe-ncore-sans/PFEncoreSansPro-Medium.woff2') format('woff2'),
+    url('../fonts/pfe-ncore-sans/PFEncoreSansPro-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PF Encore Sans Pro';
+  src: url('../fonts/pfe-ncore-sans/PFEncoreSansPro-Bold.eot');
+  src: local('../fonts/pfe-ncore-sans/PFEncoreSansPro-Bold'),
+    url('../fonts/pfe-ncore-sans/PFEncoreSansPro-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/pfe-ncore-sans/PFEncoreSansPro-Bold.woff2') format('woff2'),
+    url('../fonts/pfe-ncore-sans/PFEncoreSansPro-Bold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PF Encore Sans Pro';
+  src: url('../fonts/pfe-ncore-sans/PFEncoreSansPro-Light.eot');
+  src: local('../../fonts/pfe-ncore-sans/PFEncoreSansPro-Light'),
+    url('../fonts/pfe-ncore-sans/PFEncoreSansPro-Light.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/pfe-ncore-sans/PFEncoreSansPro-Light.woff2') format('woff2'),
+    url('../fonts/pfe-ncore-sans/PFEncoreSansPro-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
