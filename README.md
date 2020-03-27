@@ -75,10 +75,15 @@
 
 Подключил Animate.css вот ссылки на [GitHub](https://github.com/daneden/animate.css) и [animate.css](https://daneden.github.io/animate.css/)
 ----------------------
+Пишем не `animated`
 ```html
 <div class="animated infinite pulse delay-2s">Привет</div>
 ```
-и добавил длительность анимации
+а `wow`
+```html
+<div class="wow infinite pulse delay-2s">Привет</div>
+```
+и добавил свою длительность анимации
 ```css
 .dur-0.5s       
 .dur-1.5s
