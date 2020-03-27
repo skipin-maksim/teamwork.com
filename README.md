@@ -73,12 +73,17 @@
 ---
 ---
 
-Подключил Animate.css ссылки на [GitHub](https://github.com/daneden/animate.css) и [animate.css](https://daneden.github.io/animate.css/)
+Подключил Animate.css вот ссылки на [GitHub](https://github.com/daneden/animate.css) и [animate.css](https://daneden.github.io/animate.css/)
 ----------------------
+Пишем не `animated`
 ```html
 <div class="animated infinite pulse delay-2s">Привет</div>
 ```
-и добавил длительность анимации
+а `wow`
+```html
+<div class="wow infinite pulse delay-2s">Привет</div>
+```
+и добавил свою длительность анимации
 ```css
 .dur-0.5s       
 .dur-1.5s
@@ -95,6 +100,3 @@
 .delay-3.5s
 .delay-4.5s
 ```
-Подключил `wow.js`, чтоб анимация выполнялась по скролу. Но!!! По какой-то причине не работает через `browser-sync`, а вот через `LiveServer`, работает.
-
-Так что анимацию делаем, смотря через `LiveServer` > `build/index.html`
