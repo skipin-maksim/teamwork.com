@@ -1,0 +1,80 @@
+.banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .clients{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 190px;
+
+    .clients__heading{
+      font-family: $font-first;
+      font-weight: 800;
+      font-size: 51px;
+      color: $color_white;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 32px;
+      position: relative;
+
+      &--accent{
+        color: $color_accent;
+      }
+
+      &::before,
+      &::after{
+        content: '';
+        display: block;
+        background-color: rgb(255, 255, 255);
+        opacity: 0.2;
+        width: 107px;
+        height: 8px;
+        position: absolute;
+        top: 20px;
+      }
+
+      &::before{
+        left: -117px;
+      }
+
+      &::after{
+        right: -117px;
+      }
+    }
+
+    .clients__search-invitation{
+      font-size: 24px;
+      color: $color_white;
+      line-height: 26px;
+      font-weight: 300;
+      margin-bottom: 50px;
+    }
+
+    .clients__btn{
+      border: 2px solid $color_accent;
+      border-radius: 7px;
+      width: 200px;
+      height: 56px;
+      background: none;
+      color: $color_accent;
+      font-size: 24px;
+      line-height: 56px;
+      font-weight: 300;
+      cursor: pointer;
+      transition: all 200ms linear;
+
+      &:hover{
+        border-color: $color_white;
+        color: $color_white;
+      }
+
+    }
+
+  }
+}
+
