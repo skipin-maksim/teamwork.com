@@ -6,6 +6,7 @@
     $repeat: no-repeat,
     $pos: center
   );
+  position: relative;
 
   min-width: 1260px;
   height: 576px;
@@ -43,13 +44,14 @@
   text-align: center;
   color: $color_accent;
   font-size: 24px;
+  font-weight: 300;
   line-height: 26px;
   letter-spacing: -0.05em;
   border: 3px solid $color_accent;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 17px 61px;
 
-  &:hover {
+  &:hover, &:focus {
     color: $color_white;
     background-color: $color_accent;
     padding: 17px 100px;
