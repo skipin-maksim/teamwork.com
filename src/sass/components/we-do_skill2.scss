@@ -7,6 +7,7 @@
 .advertisting-block {
   @include content-between-flex($type: 'hor');
   width: 970px;
+  height: 296px;
 }
 
 .advertisting-block__advertising-about {
