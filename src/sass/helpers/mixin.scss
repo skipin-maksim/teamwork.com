@@ -182,7 +182,7 @@
 }
 
 // шестиугольник
-@mixin hexagon($width: 100px, $height: 90px, $background: '$color_accent') {
+@mixin hexagon($width: 100px, $height: 90px, $background: $color_accent) {
   width: $width;
   height: $height;
   background: $background;

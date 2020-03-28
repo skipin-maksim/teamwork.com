@@ -35,8 +35,8 @@
     line-height: 36px;
     text-transform: uppercase;
 
-    .menu__item:hover{
-      @include line(100%, 4px, $color_accent)
+    .menu__item:hover .menu__link:after{
+      opacity: 1;
     }
 
     .menu__item:hover .menu__link{
@@ -45,6 +45,19 @@
 
     .menu__link{
       color: $color_white;
+      transition: all 200ms linear;
+
+      &:after{
+        content: '';
+        display: block;
+        height: 4px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 5px;
+        background-color: $color_accent;
+        opacity: 0;
+        transition: all 200ms linear;
+      }
     }
   }
 }
