@@ -1,4 +1,4 @@
-.section-advertising {
+.we-do-advertising {
   @include content-between-flex($type: 'ver');
   height: 578px;
   position: relative;
@@ -10,7 +10,7 @@
 }
 
 .advertisting-block__advertising-about {
-  padding-top: 32px;
+  padding-top: 15px;
 }
 
 .advertising-about {
@@ -21,9 +21,19 @@
 
 .advertising-about__title {
   @extend %larg-title;
+  @include content-center-flex($type: 'ver');
+  justify-content: flex-end;
   text-transform: uppercase;
   font-weight: 500;
   margin-bottom: 27px;
+
+  &::after {
+    @include pseudo($display: block, $content: '');
+    width: 10px;
+    height: 39px;
+    background-color: $color_accent;
+    margin-left: 12px;
+  }
 }
 
 .advertising-about__text {
@@ -43,11 +53,12 @@
   border: 1px solid $color_accent;
   border-radius: 10px;
   background-color: $color_accent;
-  padding: 12px 32px;
+  padding: 9px 32px;
   position: absolute;
   right: 0;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $color_litegray;
     color: $color_accent;
   }
