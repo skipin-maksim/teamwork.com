@@ -1,6 +1,7 @@
 .section-advertising {
   @include content-between-flex($type: 'ver');
   height: 578px;
+  position: relative;
 }
 
 .advertisting-block {
@@ -33,14 +34,21 @@
 }
 
 .advertising-about__link {
-    @include transition($transition: all 0.2s linear);
-    display: block;
-    // width: 168px;
-    // height: 44px;
-    text-align: center;
-    border: 1px solid $color_accent;
-    border-radius: 10px;
-    background-color: $color_accent;
-    position: absolute;
-    right: 0;
+  @extend %normal-text;
+  font-weight: 300;
+  color: $color_litegray;
+  @include transition($transition: all 0.2s linear);
+  display: block;
+  text-align: center;
+  border: 1px solid $color_accent;
+  border-radius: 10px;
+  background-color: $color_accent;
+  padding: 12px 32px;
+  position: absolute;
+  right: 0;
+
+  &:hover {
+    background-color: $color_litegray;
+    color: $color_accent;
+  }
 }
