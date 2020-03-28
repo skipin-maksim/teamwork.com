@@ -1,5 +1,6 @@
 .banner {
   width: 100%;
+  min-width: 970px;
   min-height: 765px;
   background-image: linear-gradient($color_bg-overlay, $color_bg-overlay), url(../images/bg/bg-top.jpg);
   background-position: center;
