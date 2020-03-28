@@ -1,0 +1,81 @@
+.section-expand {
+  @include gradient-bg-img(
+    $path: '../images/bg/bg-business.jpg',
+    $path-two: linear-gradient(to top, $color_bg-overlay, $color_bg-overlay),
+    $size: cover,
+    $repeat: no-repeat,
+    $pos: center
+  );
+  position: relative;
+
+  min-width: 1260px;
+  height: 576px;
+  padding-top: 91px;
+}
+
+.expand-block {
+  @include push--auto;
+  @include content-center-flex($type: 'all');
+  flex-direction: column;
+  border: 8px solid $color_white-opacity;
+  width: 940px;
+  height: 384px;
+}
+
+.expand-block__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $font-first;
+  font-weight: 800;
+  color: $color_white;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  font-size: 51px;
+  margin-bottom: 51px;
+
+  & span {
+    color: $color_accent;
+  }
+}
+
+.expand-block__link {
+  @include transition($transition: all 0.2s linear);
+  display: block;
+  text-align: center;
+  color: $color_accent;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: -0.05em;
+  border: 3px solid $color_accent;
+  border-radius: 10px;
+  padding: 17px 61px;
+
+  &:hover, &:focus {
+    color: $color_white;
+    background-color: $color_accent;
+    padding: 17px 100px;
+  }
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-expand {
+    background-image: linear-gradient(
+        to top,
+        $color_bg-overlay,
+        $color_bg-overlay
+      ),
+      url(../images/bg/bg-business@2x.jpg);
+  }
+}
+
+@media (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .section-expand {
+    background-image: linear-gradient(
+        to top,
+        $color_bg-overlay,
+        $color_bg-overlay
+      ),
+      url(../images/bg/bg-business@3x.jpg);
+  }
+}
