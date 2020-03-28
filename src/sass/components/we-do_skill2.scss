@@ -1,0 +1,54 @@
+.section-advertising {
+  @include content-between-flex($type: 'ver');
+  height: 578px;
+  position: relative;
+}
+
+.advertisting-block {
+  @include content-between-flex($type: 'hor');
+  width: 970px;
+}
+
+.advertisting-block__advertising-about {
+  padding-top: 32px;
+}
+
+.advertising-about {
+  width: 400px;
+  text-align: right;
+  position: relative;
+}
+
+.advertising-about__title {
+  @extend %larg-title;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 27px;
+}
+
+.advertising-about__text {
+  @extend %stretched-text;
+  font-weight: 300;
+  margin-bottom: 33px;
+  border: $color_accent;
+}
+
+.advertising-about__link {
+  @extend %normal-text;
+  font-weight: 300;
+  color: $color_litegray;
+  @include transition($transition: all 0.2s linear);
+  display: block;
+  text-align: center;
+  border: 1px solid $color_accent;
+  border-radius: 10px;
+  background-color: $color_accent;
+  padding: 12px 32px;
+  position: absolute;
+  right: 0;
+
+  &:hover {
+    background-color: $color_litegray;
+    color: $color_accent;
+  }
+}
