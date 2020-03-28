@@ -1,0 +1,28 @@
+@import './normalize.scss';
+@import './fonts.scss';
+@import './helpers/variables.scss';
+@import './plugins/animate.scss';
+@import './helpers/placeholders.scss';
+@import './helpers/mixin.scss';
+@import './base.scss';
+@import './components/nav-icon.scss';
+
+//
+
+
+//Components
+@import './components/banner.scss';
+@import './components/header.scss';
+@import './components/header-nav-icon.scss';
+@import './components/header-clients.scss';
+@import './components/section-suggestions.scss';
+//Expand your business
+@import './components/expand-business.scss';
+//our process
+@import './components/our-procces.scss';
+@import './components/steps&step.scss';
+@import './components/icons-list.scss';
+//we do
+@import './components/we-do_skill1.scss';
+@import './components/we-do_skill3.scss';
+@import './components/portfolio.scss';

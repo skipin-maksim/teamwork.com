@@ -1,0 +1,190 @@
+// mixins популярных брекпоинтов / вызов @include phones{ background-color: red;}
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+@mixin tablets {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin phones {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+// отцентрировать блочный элемент, не беспокоясь о верхних и нижних отступах, которые уже были применены
+@mixin push--auto {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+// Создает линию под блоком
+// пример: @include sep-h(80%,2px,$blue);
+@mixin line($w, $h, $color, $mar:5px) {
+  &:after {
+    content: '';
+    display: block;
+    height: $h;
+    width: $w;
+    margin: 0 auto;
+    margin-top: $mar;
+    background-color: $color;
+  }
+}
+
+// Центровка абсолютно позиционированных элементов
+@mixin сenter-xy($top: 50%, $left: 50%) {
+  position: absolute;
+  left: $left;
+  top: $top;
+  transform: translate(-$top, -$left);
+}
+
+@mixin сenter-x($left: 50%) {
+  position: absolute;
+  left: $left;
+  transform: translateX(-$left);
+}
+
+@mixin сenter-y($top: 50%) {
+  position: absolute;
+  top: $top;
+  transform: translateY(-$top);
+}
+
+// для псевдоэлементов
+@mixin pseudo($display: block, $content: '') {
+  display: $display;
+  content: $content;
+}
+
+// применит transition с указанными параметрами
+@mixin transition($transition: all 0.2s linear) {
+  transition: $transition;
+}
+
+// all - применит все
+// hor - flex и j-c: center
+// ver - flex и a-i: center
+@mixin content-center-flex($type: 'all') {
+  display: flex;
+  @if $type== 'all' {
+    justify-content: center;
+    align-items: center;
+  } @else if $type== 'hor' {
+    justify-content: center;
+  } @else if $type== 'ver' {
+    align-items: center;
+  }
+}
+
+// all - применит все
+// hor - flex и j-c: space-between
+// ver - flex и a-i: center
+@mixin content-between-flex($type: 'all') {
+  display: flex;
+  @if $type== 'all' {
+    justify-content: space-between;
+    align-items: center;
+  } @else if $type== 'hor' {
+    justify-content: space-between;
+  } @else if $type== 'ver' {
+    align-items: center;
+  }
+}
+
+// для background
+@mixin bg-img($path: '', $size: cover, $repeat: no-repeat, $pos: center) {
+  background-image: url($path);
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $pos;
+}
+// для background с градиентом (затемнением). (пример): linear-gradient(to top, $color_bg-overlay, $color_bg-overlay)
+@mixin gradient-bg-img($path: '', $path-two: linear-gradient(), $size: cover, $repeat: no-repeat, $pos: center) {
+  background-image: $path-two, url($path);
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $pos;
+}
+
+//создает треугольники, без картинок, вы только задаете цвет, размер, направление и все.
+@mixin css-triangle(
+  $color,
+  $direction,
+  $size: 6px,
+  $position: absolute,
+  $round: false
+) {
+  width: 0;
+  height: 0;
+  @if $round {
+    border-radius: 3px;
+  }
+  @if $direction == 'down' {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-top: $size solid $color;
+    margin-top: 0 - round($size / 2.5);
+  } @else if $direction == 'up' {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-bottom: $size solid $color;
+    margin-bottom: 0 - round($size / 2.5);
+  } @else if $direction == 'right' {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-left: $size solid $color;
+    margin-right: -$size;
+  } @else if $direction == 'left' {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-right: $size solid $color;
+    margin-left: -$size;
+  } @else if $direction == 'down-left' {
+    border-top: $size solid transparent;
+    border-left: $size solid $color;
+    margin-right: -$size;
+    border-bottom: 0px solid $color;
+    margin-bottom: 0 - round($size / 2.5);
+  } @else if $direction == 'down-right' {
+    border-left: $size solid transparent;
+    border-bottom: 0px solid $color;
+    margin-bottom: 0 - round($size / 2.5);
+    border-top: $size solid transparent;
+    border-right: $size solid $color;
+    margin-left: -$size;
+  } @else if $direction == 'up-right' {
+    border-left: $size solid transparent;
+    border-top: 0px solid $color;
+    margin-top: 0 - round($size / 2.5);
+    border-bottom: $size solid transparent;
+    border-right: $size solid $color;
+    margin-left: -$size;
+  } @else if $direction == 'up-left' {
+    border-right: $size solid transparent;
+    border-top: 0px solid $color;
+    margin-top: 0 - round($size / 2.5);
+    border-bottom: $size solid transparent;
+    border-left: $size solid $color;
+    margin-right: -$size;
+  }
+}
+
+// шестиугольник
+@mixin hexagon($width: 100px, $height: 90px, $background: '$color_accent') {
+  width: $width;
+  height: $height;
+  background: $background;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
