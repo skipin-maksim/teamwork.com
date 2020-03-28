@@ -110,6 +110,13 @@
   background-repeat: $repeat;
   background-position: $pos;
 }
+// для background с градиентом (затемнением). (пример): linear-gradient(to top, $color_bg-overlay, $color_bg-overlay)
+@mixin gradient-bg-img($path: '', $path-two: linear-gradient(), $size: cover, $repeat: no-repeat, $pos: center) {
+  background-image: $path-two, url($path);
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $pos;
+}
 
 //создает треугольники, без картинок, вы только задаете цвет, размер, направление и все.
 @mixin css-triangle(
