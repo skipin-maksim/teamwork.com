@@ -1,0 +1,15 @@
+.socials {
+  @include content-center-flex($type: 'all');
+  &__item:not(:last-child) {
+    margin-right: 18px;
+  }
+}
+.sosial-icons {
+  width: 37px;
+  height: 37px;
+  fill: $color_dark;
+  @include transition;
+  &:hover {
+    fill: $color_accent;
+  }
+}
