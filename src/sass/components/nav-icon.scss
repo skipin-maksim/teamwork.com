@@ -1,5 +1,5 @@
 .nav-icon {
-  @include сenter-x;
+  @include сenter-x(48.5%);
   bottom: 16px;
 
   &__arrow-down {
