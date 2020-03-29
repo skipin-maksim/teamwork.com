@@ -1,23 +1,31 @@
 .we-do-advertising {
   @include content-between-flex($type: 'ver');
-  height: 578px;
+  min-height: 578px;
   position: relative;
+  padding: 134px 0 148px;
 }
 
 .advertisting-block {
   @include content-between-flex($type: 'hor');
   width: 970px;
-  height: 296px;
+  min-height: 296px;
 }
 
 .advertisting-block__advertising-about {
   padding-top: 15px;
 }
 
+.advertisting-block__img {
+  height: 296px;
+}
+
 .advertising-about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   width: 400px;
+  min-height: 296px;
   text-align: right;
-  position: relative;
 }
 
 .advertising-about__title {
@@ -49,14 +57,11 @@
   font-weight: 300;
   color: $color_litegray;
   @include transition($transition: all 0.2s linear);
-  display: block;
   text-align: center;
   border: 1px solid $color_accent;
   border-radius: 10px;
   background-color: $color_accent;
   padding: 9px 32px;
-  position: absolute;
-  right: 0;
 
   &:hover,
   &:focus {
