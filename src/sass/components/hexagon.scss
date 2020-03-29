@@ -1,14 +1,17 @@
 .hexagon-big {
   position: relative;
-  background-color: $color_accent-lite;
-  @include hexagon($width: 74px, $height: 84px);
+
+  @include hexagon(
+    $width: 74px,
+    $height: 84px,
+    $background: $color_accent-lite
+  );
   margin: 0 auto;
   margin-top: 52px;
   margin-bottom: 74px;
 }
 .hexagon-samll {
-  background-color: $color_accent;
-  @include hexagon($width: 66px, $height: 74px);
+  @include hexagon($width: 66px, $height: 74px, $background: $color_accent);
   position: absolute;
   top: 50%;
   left: 50%;
