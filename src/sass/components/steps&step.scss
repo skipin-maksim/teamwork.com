@@ -21,7 +21,7 @@
     }
 
     &:nth-child(3) {
-      @include hexagon($width: 257px, $height: 297px);
+      @include hexagon($width: 257px, $height: 297px, $background: $color_grey-line);
 
       & > .step-hexagon {
         @include hexagon(
