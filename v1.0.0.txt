@@ -1,0 +1,10 @@
+release v1.0.0
+29-03-2020
+
+team:
+Skipin Maksim
+Kuzenko Yaroslav
+Grygorenko Aleksey
+Kozin Maxim
+Hryhoryev Andrey
+Yakymenko Yevhen 
