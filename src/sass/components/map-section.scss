@@ -1,0 +1,50 @@
+.map-section {
+  position: relative;
+
+  &__heading {
+    color: $color_white;
+    font-size: 27px;
+    font-weight: 500;
+    margin: 0 0 21px;
+  }
+
+  &__address {
+    color: $color_white;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.googlemap {
+  display: block;
+  height: 338px;
+  filter: grayscale(100%);
+}
+
+.hexagon-footer {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  @include hexagon;
+  width: 209px;
+  height: 242px;
+  background-color: $color_accent-lite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__inner {
+    @include hexagon;
+    width: 189px;
+    height: 218px;
+    background-color: $color_accent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

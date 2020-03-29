@@ -1,8 +1,26 @@
-.empty__section {
-    height: 700px;
-    width: 100%;
-}
+.footer {
+  min-height: 253px;
+  background: linear-gradient($color_bg-overlay, $color_bg-overlay),
+    url(../images/bg/bg-footer.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-.googlemap {
-    height: 338px;
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 78px;
+  }
+
+  &__logo {
+    margin-right: 22px;
+  }
+
+  &__title {
+    font-family: $font-third;
+    font-size: 32px;
+    font-weight: 700;
+    color: $color_white;
+  }
 }
