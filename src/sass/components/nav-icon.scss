@@ -1,5 +1,5 @@
 .nav-icon {
-  @include сenter-x;
+  @include сenter-x(48.5%);
   bottom: 16px;
 
   &__arrow-down {
@@ -8,5 +8,10 @@
     fill: $color_accent;
     border-radius: 50%;
     border: 2px solid $color_accent;
+    @include transition;
+  }
+
+  &:hover .nav-icon__arrow-down {
+    border: 2px solid transparent;
   }
 }

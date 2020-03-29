@@ -1,14 +1,23 @@
 **teamwork.com Second work in team**
 ===
 Полезно
+* Сделать клон данного репозитория
+* Из папки проекта войти в ветку `dev`
+* Из `dev` сделать свою рабочую ветку
 * Работаем только в своей ветке, НЕ В `dev`
-* Делаем merge `pull request` из СВOЕЙ ветки в `dev`
+* Делаем merge `pull request` из СВОЕЙ ветки в `dev`
 
 
+### Сделать свою ветку
+    git branch [name branch]
 ### Сделать свою ветку и перейти в нее
     git checkout -b [name branch]
+### Перемещаться по веткам
+    git checkout [name branch]    
 ### Чтоб сделать push своей ветки на GitHub
     git push -u origin [name branch]
+### Удалить ветку 
+    git branch -d [name branch]
 
 ---
 ---
